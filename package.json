@@ -1,0 +1,11 @@
+{
+  "name": "search_airbnb_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jade Kang & Daisy Yau",
+  "license": "ISC"
+}
