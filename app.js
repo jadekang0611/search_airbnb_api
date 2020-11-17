@@ -8,9 +8,16 @@ require('dotenv/config');
 
 const bodyParser = require('body-parser');
 
+const propertiesRoute = require('./routes/properties');
+
 app.get('/', (req, res, next) => {
   res.send('Hello world!');
 });
+
+
+
+// Route Middlewares
+app.use('/properties', propertiesRoute);
 
 // Connect to DB
 mongoose.connect(
