@@ -6,8 +6,8 @@ const Property = require('../models/Property');
 // Get all properties
 router.get('/', async (req, res, next) => {
   try {
-    const properties = await Property.find();
-    res.status(200).json(properties);
+    const listingAndReviews = await Property.find().limit(10);
+    res.status(200).json(listingAndReviews);
   } catch (e) {
     console.log(e);
     res.status(500).json({ message: e });
